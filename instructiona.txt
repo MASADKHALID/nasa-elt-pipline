@@ -1,0 +1,41 @@
+generte nasa api
+create lambda function
+  paste extract.py 
+  follow path lambda>>configuration>>evironmental vraiables
+      set environmental variable of key(line no 18 of extract.py) value(nasa api)
+  permission(s3,coludwatch,cloudwatchv2)
+  time(14 minudes)
+  layers(python.zip)
+  line 10 must be your s3 bucket
+  line 11 (attention)
+create event bridge rule
+  trigger above lambda function
+create s3 bucket
+open django project in cmd activate environment>>run commands
+  django-admin startproject [project Name]
+  py manage.py startapp [app name]
+  open visual (code .)
+    folow path [project Name]>>[project Name]>>[app name]>>views.py
+          paste views.py
+              line 19 (must be same as s3 key line 11 of extract.py)
+              line 26 (html file must be same in your templates folder file)
+          follow path [project Name]>>settings>>paste details of line(13,14,15,17)
+    create templates folder inside [app name] folder and create nasa_data.html (paste templates/nasa_data.html)
+    follow path [project Name]>>settings>installed apps [] add [app name]
+    follow  path [project Name]>>urls.py
+          paste urls.py 
+          line 21([app name].urls)
+    follow path [project Name]>>[project Name]>>[app name]>>urls.py
+          paste members/urls.py
+          line 2 [app name] import  views
+          line 5 must be same function create in views.py
+    run below commands in cmd
+        py manage.py migrate
+        py manage.py runserver
+
+          
+          
+          
+    
+
+  
