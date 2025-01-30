@@ -33,6 +33,9 @@ A brief description or explanation of the image.
 The image itself in high definition (HD URL).
 The app provides a simple, elegant user interface that allows users to view the NASA data in real-time.
 
+![127 0 0 1_8000_nasa_json_ (3)](https://github.com/user-attachments/assets/e9caa7b7-8337-441d-b454-dbec1ea94029)
+
+
 # ⚙️ Detailed Workflow:
 Data Extraction (Lambda):
 
@@ -56,5 +59,4 @@ Cost-Effective: Using AWS Lambda and S3 ensures that I only pay for the resource
 Seamless Integration: By using boto3, I was able to easily integrate AWS services (Lambda, S3, EventBridge) into my Django web app.
 User-Friendly Display: Django’s flexibility allowed me to create a clean, responsive webpage where users can easily read and view the NASA data.
 
-![nasa_etl_pipline drawio](https://github.com/user-attachments/assets/7e3e458d-8571-4f79-ad05-344ea73e2f18)
 
