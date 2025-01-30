@@ -51,7 +51,7 @@ The Django app fetches the latest JSON data from the S3 bucket using boto3.
 The data is parsed and displayed on a user-friendly web page using HTML/CSS.
 Users can view the APOD image, read the description, and explore more about the day's featured content.
 
-#🌟 Key Benefits:
+# 🌟 Key Benefits:
 
 Automation: The data is fetched and updated automatically every day via EventBridge and Lambda. This allows for hands-off operation once set up.
 Scalability: With AWS, the entire system can scale based on demand. Both Lambda and EventBridge handle large amounts of requests effortlessly.
