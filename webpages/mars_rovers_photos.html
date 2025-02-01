@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:8000/nasa_json/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 0px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin:30px;
+            
+        }
+        .section {
+            width: 45%;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        P
+        {
+            font-size: 30px;
+        }
+        .head{
+            text-align: center;
+            font-size: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="head">Mars Rover Photos</h1>
+    <div class="content">
+        <img src="data:image/png;base64,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" ,="" alt="nasa logo" height="100px" width="100px">
+        <div class="section">
+            <h1>Rover Name : </h1>
+            <p>Curiosity</p>
+            <h1>Camera Name : </h1>
+            <p>Front Hazard Avoidance Camera</p>
+            <h1>Earth Date : </h1>
+            <p>2012-08-06</p>
+            <h1>Captured Image : </h1>
+            <img src="./mars_rovers_photos_files/FRA_397506083EDR_F0010008AUT_04096M_.JPG" alt="">
+            <hr>
+            <h1>Rover Name : </h1>
+            <p>Curiosity</p>
+            <h1>Camera Name : </h1>
+            <p>Rear Hazard Avoidance Camera</p>
+            <h1>Earth Date : </h1>
+            <p>2012-08-06</p>
+            <h1>Captured Image : </h1>
+            <img src="./mars_rovers_photos_files/RRA_397506157EDR_F0010008AUT_04096M_.JPG" alt="">
+            <hr>
+        </div>
+        <div class="section">
+            <h1>Rover Name : </h1>
+            <p>Curiosity</p>
+            <h1>Camera Name : </h1>
+            <p>Chemistry and Camera Complex</p>
+            <h1>Earth Date : </h1>
+            <p>2012-08-06</p>
+            <h1>Captured Image : </h1>
+            <img src="./mars_rovers_photos_files/CR0_397506434EDR_F0010008CCAM00000M_.JPG" alt="">
+            <hr>
+            <h1>Rover Name : </h1>
+            <p>Curiosity</p>
+            <h1>Camera Name : </h1>
+            <p>Mars Descent Imager</p>
+            <h1>Earth Date : </h1>
+            <p>2012-08-06</p>
+            <h1>Captured Image : </h1>
+            <img src="./mars_rovers_photos_files/0000MD9999001503E1_DXXX.jpg" alt="">
+        </div>  
+    </div>
+
+
+
+</body></html>
